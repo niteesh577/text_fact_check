@@ -1,0 +1,29 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="16">
+            <item index="0" class="java.lang.String" itemvalue="google.generativeai" />
+            <item index="1" class="java.lang.String" itemvalue="tavily-python" />
+            <item index="2" class="java.lang.String" itemvalue="chromadb" />
+            <item index="3" class="java.lang.String" itemvalue="beautifulsoup4" />
+            <item index="4" class="java.lang.String" itemvalue="langgraph" />
+            <item index="5" class="java.lang.String" itemvalue="langchain-openai" />
+            <item index="6" class="java.lang.String" itemvalue="langchain-groq" />
+            <item index="7" class="java.lang.String" itemvalue="langchain-google-genai" />
+            <item index="8" class="java.lang.String" itemvalue="requests" />
+            <item index="9" class="java.lang.String" itemvalue="langchain-community" />
+            <item index="10" class="java.lang.String" itemvalue="langchain" />
+            <item index="11" class="java.lang.String" itemvalue="langchain-core" />
+            <item index="12" class="java.lang.String" itemvalue="flask" />
+            <item index="13" class="java.lang.String" itemvalue="langchain-anthropic" />
+            <item index="14" class="java.lang.String" itemvalue="groq" />
+            <item index="15" class="java.lang.String" itemvalue="langchain-experimental" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
