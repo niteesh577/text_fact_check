@@ -199,73 +199,73 @@ json <br>
     }, <br>
     { <br>
       "finding": "Live blog: Election 2024 fact checks ...", <br>
-      "relevance": "High",
-      "source": "https://www.pbs.org/newshour/politics/fact-check-trumps-2024-win-doesnt-prove-claims-that-the-2020-election-was-stolen"
-    },
-    {
-      "finding": "Archives ... FactCheck.org is one of several organizations working with Meta to debunk misinformation ...",
-      "relevance": "Medium",
-      "source": "https://www.factcheck.org/2024/11/trump-won-the-popular-vote-contrary-to-claims-online/"
-    },
-    {
-      "finding": "Fact check: Trump lies at CPAC about the 2024 election he won ...",
-      "relevance": "Medium",
-      "source": "https://www.cnn.com/2025/02/22/politics/fact-check-trump-cpac-2025-election/index.html"
-    },
-    {
-      "finding": "Trump threatens long prison sentences for those who ‘cheat’ in the election if he wins ...",
-      "relevance": "Medium",
-      "source": "https://www.pbs.org/newshour/politics/fact-checking-trumps-false-claims-about-voter-fraud-and-rigged-elections"
-    }
-  ],
-  "sources": [
-    {
-      "reliability": "Medium",
-      "trust_score": 0.5,
-      "url": "https://www.cnn.com/2025/04/29/politics/president-terms-years-trump-election"
-    },
-    {
-      "reliability": "Medium",
-      "trust_score": 0.5,
-      "url": "https://www.pbs.org/newshour/politics/fact-check-trumps-2024-win-doesnt-prove-claims-that-the-2020-election-was-stolen"
-    },
-    {
-      "reliability": "Medium",
-      "trust_score": 0.5,
-      "url": "https://www.factcheck.org/2024/11/trump-won-the-popular-vote-contrary-to-claims-online/"
-    },
-    {
-      "reliability": "Medium",
-      "trust_score": 0.5,
-      "url": "https://www.cnn.com/2025/02/22/politics/fact-check-trump-cpac-2025-election/index.html"
-    },
-    {
-      "reliability": "Medium",
-      "trust_score": 0.5,
-      "url": "https://www.pbs.org/newshour/politics/fact-checking-trumps-false-claims-about-voter-fraud-and-rigged-elections"
-    }
-  ],
-  "summary": "The claim that Donald Trump lost the 2025 elections is supported by multiple fact-checking sources, including CNN and FactCheck.org. These sources verify that Trump won the 2024 election, contradicting the claim. The evidence is reliable, as it comes from reputable news organizations and fact-checking websites. However, the verification results indicate low credibility, primarily due to the lack of domain authority and citation count. The validation results reveal several logical fallacies, including false causality and appeal to emotion, which may indicate biased or misleading information. Despite these limitations, the overall confidence level is 0.8, indicating a moderate level of confidence in the final verdict. The final verdict is False, as the evidence overwhelmingly supports Trump's victory in the 2024 election.",
-  "verdict": "False"
-}
+      "relevance": "High", <br>
+      "source": "https://www.pbs.org/newshour/politics/fact-check-trumps-2024-win-doesnt-prove-claims-that-the-2020-election-was-stolen" <br>
+    }, <br>
+    { <br>
+      "finding": "Archives ... FactCheck.org is one of several organizations working with Meta to debunk misinformation ...", <br>
+      "relevance": "Medium", <br>
+      "source": "https://www.factcheck.org/2024/11/trump-won-the-popular-vote-contrary-to-claims-online/" <br>
+    }, <br>
+    { <br>
+      "finding": "Fact check: Trump lies at CPAC about the 2024 election he won ...", <br>
+      "relevance": "Medium", <br>
+      "source": "https://www.cnn.com/2025/02/22/politics/fact-check-trump-cpac-2025-election/index.html" <br>
+    }, <br>
+    { <br>
+      "finding": "Trump threatens long prison sentences for those who ‘cheat’ in the election if he wins ...", <br>
+      "relevance": "Medium", <br>
+      "source": "https://www.pbs.org/newshour/politics/fact-checking-trumps-false-claims-about-voter-fraud-and-rigged-elections" <br>
+    } <br>
+  ], <br>
+  "sources": [ <br>
+    { <br>
+      "reliability": "Medium", <br>
+      "trust_score": 0.5, <br>
+      "url": "https://www.cnn.com/2025/04/29/politics/president-terms-years-trump-election" <br>
+    }, <br> 
+    { <br>
+      "reliability": "Medium", <br>
+      "trust_score": 0.5, <br>
+      "url": "https://www.pbs.org/newshour/politics/fact-check-trumps-2024-win-doesnt-prove-claims-that-the-2020-election-was-stolen" <br>
+    }, <br>
+    { <br>
+      "reliability": "Medium", <br>
+      "trust_score": 0.5, <br>
+      "url": "https://www.factcheck.org/2024/11/trump-won-the-popular-vote-contrary-to-claims-online/" <br>
+    }, <br>
+    { <br>
+      "reliability": "Medium", <br>
+      "trust_score": 0.5, <br>
+      "url": "https://www.cnn.com/2025/02/22/politics/fact-check-trump-cpac-2025-election/index.html" <br>
+    }, <br>
+    { <br>
+      "reliability": "Medium", <br>
+      "trust_score": 0.5, <br>
+      "url": "https://www.pbs.org/newshour/politics/fact-checking-trumps-false-claims-about-voter-fraud-and-rigged-elections" <br>
+    } <br>
+  ], <br>
+  "summary": "The claim that Donald Trump lost the 2025 elections is supported by multiple fact-checking sources, including CNN and FactCheck.org. These sources verify that Trump won the 2024 election, contradicting the claim. The evidence is reliable, as it comes from reputable news organizations and fact-checking websites. However, the verification results indicate low credibility, primarily due to the lack of domain authority and citation count. The validation results reveal several logical fallacies, including false causality and appeal to emotion, which may indicate biased or misleading information. Despite these limitations, the overall confidence level is 0.8, indicating a moderate level of confidence in the final verdict. The final verdict is False, as the evidence overwhelmingly supports Trump's victory in the 2024 election.", <br>
+  "verdict": "False" <br>
+} <br>
 
 
-** 🧠 What This Shows
+** 🧠 What This Shows <br>
 This example demonstrates how the system:
 
 Accepts a claim as input.
 
 Evaluates the truthfulness of that claim using external, reputable sources.
 
-Interpretation:
+**Interpretation**:
 
-Confidence Score: 0.8 — Moderate confidence in the verdict.
+**Confidence Score**: 0.8 — Moderate confidence in the verdict.
 
-Verdict: False — The claim was determined to be incorrect.
+**Verdict: False** — The claim was determined to be incorrect.
 
-Sources: All findings are backed by medium-reliability sources like CNN, PBS, and FactCheck.org.
+**Sources**: All findings are backed by medium-reliability sources like CNN, PBS, and FactCheck.org.
 
-Summary: The system explains why the claim was evaluated as false and highlights logical fallacies or bias where relevant.
+**Summary**: The system explains why the claim was evaluated as false and highlights logical fallacies or bias where relevant.
 
 ---
 
