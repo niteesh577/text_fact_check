@@ -178,27 +178,27 @@ fact-buddy/
 ---
 
 
-## Example: Claim Validation Output
+## Example: Claim Validation Output <br>
 
-📥 Input
-json
+📥 Input <br>
+json <br>
 
-{
-  "claim": "Donald Trump lost the 2025 elections"
-}
-📤 Output
-json
+{ <br>
+  "claim": "Donald Trump lost the 2025 elections" <br>
+} <br>
+📤 Output <br>
+json <br>
 
-{
-  "confidence": 0.8,
-  "key_findings": [
-    {
-      "finding": "President Donald Trump speaks on his first 100 days at Macomb County Community College Sports Expo Center, Tuesday, April 29, 2025, in Warren, Mich. ...",
-      "relevance": "High",
-      "source": "https://www.cnn.com/2025/04/29/politics/president-terms-years-trump-election"
-    },
-    {
-      "finding": "Live blog: Election 2024 fact checks ...",
+{ <br>
+  "confidence": 0.8, <br>
+  "key_findings": [ <br>
+    { <br>
+      "finding": "President Donald Trump speaks on his first 100 days at Macomb County Community College Sports Expo Center, Tuesday, April 29, 2025, in Warren, Mich. ...", <br>
+      "relevance": "High", <br>
+      "source": "https://www.cnn.com/2025/04/29/politics/president-terms-years-trump-election" <br>
+    }, <br>
+    { <br>
+      "finding": "Live blog: Election 2024 fact checks ...", <br>
       "relevance": "High",
       "source": "https://www.pbs.org/newshour/politics/fact-check-trumps-2024-win-doesnt-prove-claims-that-the-2020-election-was-stolen"
     },
