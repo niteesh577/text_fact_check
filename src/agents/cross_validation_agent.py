@@ -3,12 +3,19 @@ from langchain.prompts import ChatPromptTemplate
 from langchain.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field
 from typing import List, Dict
+import torch
+from transformers import AutoTokenizer
+from transformers import AutoModelForSequenceClassification
 
 class ValidationResult(BaseModel):
     biases: List[Dict[str, str]] = Field(description="List of identified biases")
-    logical_fallacies: List[Dict[str, str]] = Field(description="List of logical fallacies")
+    logical_fallacies: str = Field(description="List of logical fallacies")
     cross_references: List[str] = Field(description="Cross-referenced sources")
     confidence_score: float = Field(description="Overall confidence score")
+
+
+
+
 
 class CrossValidationAgent:
     def __init__(self):
@@ -44,6 +51,8 @@ class CrossValidationAgent:
         identified_biases = []
         claim_text = content["claim"].lower()
         research_data = content["research"]
+
+
         
         # Simplified implementation to avoid LLM calls during analysis
         if "search_results" in research_data and "organic_results" in research_data["search_results"]:
@@ -116,11 +125,29 @@ class CrossValidationAgent:
             "research": research_results
         })
         
-        # Check for logical fallacies
-        fallacies = self.check_logical_fallacies({
-            "claim": claim,
-            "research": research_results
-        })
+        # # Check for logical fallacies
+        # fallacies = self.check_logical_fallacies({
+        #     "claim": claim,
+        #     "research": research_results
+        # })
+
+        model = AutoModelForSequenceClassification.from_pretrained("q3fer/distilbert-base-fallacy-classification")
+        tokenizer = AutoTokenizer.from_pretrained("q3fer/distilbert-base-fallacy-classification")
+
+        inputs = tokenizer(claim, return_tensors='pt')
+
+        with torch.no_grad():
+            logits = model(**inputs)
+            scores = logits[0][0]
+            scores = torch.nn.Softmax(dim=0)(scores)
+
+            _, ranking = torch.topk(scores, k=scores.shape[0])
+            ranking = ranking.tolist()
+        
+        results = [f"{i+1}) {model.config.id2label[ranking[i]]} {scores[ranking[i]]:.4f}" for i in range(scores.shape[0])]
+        fallacies = '\n'.join(results)
+        print(fallacies)
+
         
         # Simplified cross-reference implementation
         cross_refs = []
@@ -153,7 +180,7 @@ class CrossValidationAgent:
             biases=biases,
             logical_fallacies=fallacies,
             cross_references=cross_refs,
-            confidence_score=confidence_score
+            confidence_score=confidence_score,
         )
         
         state["validation_results"] = validation_result.dict()
