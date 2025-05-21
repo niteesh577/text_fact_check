@@ -182,15 +182,13 @@ fact-buddy/
 
 📥 Input
 json
-Copy
-Edit
+
 {
   "claim": "Donald Trump lost the 2025 elections"
 }
 📤 Output
 json
-Copy
-Edit
+
 {
   "confidence": 0.8,
   "key_findings": [
